@@ -1,0 +1,8 @@
+db.product.insertMany([
+{product_id:7,product_description:"kitchen cabinet",
+product_finish:"Cherry",
+standard_price:1500.00
+},{product_id:8,product_description:"table",
+product_finish:"Red Oak",standard_price:550.00}])
+
+db.product.find()

@@ -1,0 +1,4 @@
+db.customer.deleteMany({customer_id:10001})
+db.Order.deleteMany({customer_id:10001})
+db.customer.find()
+db.Order.find()

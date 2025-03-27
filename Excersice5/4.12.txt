@@ -1,0 +1,21 @@
+[
+  {
+    $match:
+      /**
+       * query: The query in MQL.
+       */
+      {
+        order_date: {
+          $gte: "2020-01-10 00:00:00",
+          $lte: "2020-01-15 23:59:59"
+        }
+      }
+  },
+  {
+    $count:
+      /**
+       * Provide the field name for the count.
+       */
+      "order_id"
+  }
+]

@@ -1,0 +1,1 @@
+db.product.find({product_finish:{$regex:"white",$options:"i"}})
