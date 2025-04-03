@@ -1,1 +1,3 @@
-db.product.find({product_finish:{$regex:"white",$options:"i"}})
+db.product.find(
+  { product_finish: { $regex: "white", $options: "i" } }
+).sort({ customer_id: 1 })
